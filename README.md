@@ -13,12 +13,6 @@ A responsive landing page showcasing offers and deals with dynamic navigation an
 - HTML5
 - CSS3
 - JavaScript (ES6)
-
-## How to Run
-1. download the file
-2. un zip the file
-3. open in vs.code
-
 ## Author
 - **Mohaned Tareq Hussain Mohamed**
 
