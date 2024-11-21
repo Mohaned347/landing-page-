@@ -1,0 +1,11 @@
+header :
+  nav-par background:
+       #562714
+  profile background :
+       #874c16
+  humburger-menu background:
+       #A31600
+  timer color :
+       #F3EFE6
+main :
+    

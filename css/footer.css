@@ -1,0 +1,111 @@
+footer{
+    grid-area: fot;
+}
+ /* Footer Styling */
+ footer {
+    margin-top: 40px;
+    background-color: #703106;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+
+  footer a:hover {
+    color: #ff4500;
+  }
+  .info{
+    padding: 10px;
+    background-color: #200e02af;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+  }
+  .brands{
+    background-color: #ccc;
+    width: 100%;
+  }
+/* Styling for the rate-us form */
+#rate-us {
+  background-color: #703106;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+#rateForm input,
+#rateForm textarea,
+#rateForm select {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+#rateForm button {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#rateForm button:hover {
+  background-color: #d93b00;
+}
+/* Styling the rating container */
+/* Styling the rating container */
+/* Styling the rating container */
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stars-rating {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.stars-rating span {
+  font-size: 2rem; /* Size of the stars */
+  color: #ccc; /* Default color for unselected stars */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for stars */
+
+.stars span {
+  color: #ccc; /* Default color for unselected stars */
+  font-size: 30px;
+}
+
+.stars span.selected {
+  color: gold; /* Highlight selected stars */
+  gap: 0px;
+}
+.stars-rating span.hovered {
+  color: #ffd700; /* Highlight color on hover */
+}
+
+/* Highlight selected stars */
+.stars-rating span.selected {
+  color: #ffd700; /* Color for selected stars */
+}
+footer #copyrights{
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+}

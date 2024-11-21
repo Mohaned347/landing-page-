@@ -1,0 +1,154 @@
+@media (min-width: 768px)
+{
+  header{
+     width: 100%;
+  }
+   .cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+   }
+   .testimonials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    margin-left: 10%;
+    padding: 40px;
+}
+#popup {
+    top: -20px;
+}
+}
+@media (min-width: 528px)
+{
+   .cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+   }
+   .testimonials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    margin-left: 10%;
+    padding: 0px;
+}
+#popup {
+    top: -50px;
+    width: 300px;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px)
+{
+  header{
+    width:100%;
+  }
+   .cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+   }
+   .testimonials  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    margin-left: 10%;
+   padding: 30px;
+}
+#popup {
+    top: -50px;
+    width: 300px;
+}
+.content div img{
+    width: 450px;
+    height: 80%;
+    margin-top: 20px;
+}
+.content {
+    margin-top: 20px;
+}
+#slider-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    margin: 0px;
+    width: 100%;
+
+}
+#slider2 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #e6e0e0b4;
+
+
+}
+.menu {
+    position: static;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 30%;
+    flex-wrap: wrap;
+  }
+
+  .menu-head, .sochial, .hamburger, .close ,.profile1,.logo1 {
+    display: none;
+  }
+
+  ul.myList {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+  }
+
+  ul.myList li a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  ul.myList li a:hover {
+    color: #FFD700;
+    font-weight: bold;
+  }
+  .menu ul {
+    list-style: none;
+    padding: 15px;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    /* width: 200px; */
+    gap: 30px;
+  }
+}

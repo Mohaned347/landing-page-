@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/image.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Offers</title>
+</head>
+<body>
+     <div class="contener">
+        <header class="fade-in">
+            <div class="logo" >
+                <img src="./assets/images/image.png" alt="Logo">
+              </div>
+              <div class="timer">
+                <h3>next deal</h3>
+                <p id="gift-timer">00:03:00</p>
+              </div>
+              <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="close" id="close">&#10005;</div>
+
+              <nav class="menu" id="menu">
+                <div class="menu-head">
+                    <div class="logo1"> <img src="./assets/images/image.png" alt="Logo"></div>
+                    <div class="profile1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg></div>
+                </div>
+                <hr>
+                <nav>
+                    <ul id="navbar__list"></ul>
+                  </nav>
+                <hr>
+                <div class="sochial">
+                    <div class="facebook">
+                        <a href=""><img src="./assets/images/Telecharger-Facebook.webp" alt=""></a>
+                    </div>
+                    <div class="linkedin">
+                        <a href=""><img src="./assets/images/Linkedin-Emblem.png" alt=""></a>
+                    </div>
+                    <div class="x">
+                       <a href=""><img src="./assets/images/1691832581twitter-x-icon-png.png" alt=""></a>
+                    </div>
+                </div>
+              </nav>
+
+        </header>
+        <main>
+            <div id="popup">
+                <button class="close-btn" onclick="closePopup()">×</button>
+
+                <div class="contnet">
+                    <img class="popup-gif" src="./assets/images/fireworks.gif" alt="Time's Up GIF">
+                    <p id="p1">you got</p>
+                    <p id="p2"></p>
+                    <p id="p3"></p>
+                    <p id="p4"></p>
+                </div>
+                <button class="ok-btn" onclick="closePopup()">ok</button>
+            </div>
+            <div id="overlay"></div>
+            <section id="sec1" data-nav="slider">
+                <div id="slider-1" class="slider">
+                    <div class="scroll-left" onclick="scrollToLeft()">‹</div>
+                    <div class="content">
+                        <div>
+                            <img src="./assets/images/offers/AmazonPrimeDayPromoCode1200x760.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/images/offers/kfc-super-six-chicken-bucket-1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/images/offers/Nike20SUMMER.jpg" alt="">
+                        </div>
+                        <div><img src="./assets/images/offers/walmart-bf-1.png" alt=""></div>
+                    </div>
+                    <div class="scroll-right" onclick="scrollToRight()">›</div>
+
+                    <!-- Pagination dots -->
+                    <div class="pagination">
+                        <div class="dot active" onclick="goToSlide(0)"></div>
+                        <div class="dot" onclick="goToSlide(1)"></div>
+                        <div class="dot" onclick="goToSlide(2)"></div>
+                        <div class="dot" onclick="goToSlide(3)"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="text">
+                <p id="text1"> some new deails </p>
+            </div>
+            <section  id="sec4" data-nav="deails">
+                <div class="cards" class="fade-in">
+                    <div class="card1 card fade-in">
+                        <div class="offbrs">
+                            <p>50%</p>
+                        </div>
+                        <div class="details">
+                            <h2>nike</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto quos ad corrupti, eligendi in tempora,</p>
+                            <button >></button>
+                        </div>
+                    </div>
+                    <div class="card2 card fade-in">
+                        <div class="offbrs">
+                            <p>30%</p>
+                        </div>
+                        <div class="details">
+                            <h2>walmart</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto quos ad corrupti, eligendi in tempora,</p>
+                            <button>></button>
+                        </div>
+                    </div>
+                    <div class="card3 card fade-in">
+                        <div class="offbrs">
+                            <p>40%</p>
+                        </div>
+                        <div class="details">
+                            <h2>amazon</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto quos ad corrupti, eligendi in tempora,</p>
+                            <button >></button>
+                        </div>
+                    </div>
+                    <div class="card4 card fade-in">
+                        <div class="offbrs">
+                            <p>70%</p>
+                        </div>
+                        <div class="details">
+                            <h2>shopwise</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis architecto quos ad corrupti, eligendi in tempora,</p>
+                            <button >></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text" >
+                <p id="text1">pick your fevorit brand and get best offers!</p>
+            </div>
+            <section id="sec5"  data-nav="shops">
+                  <div class="shopCard">
+                    <div><img src="./assets/images/Brands/1226166.png" alt=""></div>
+                    <div><img src="./assets/images/Brands/522a7e57d16d86e8193df73e674d1f7a.png" alt=""></div>
+                    <div><img src="./assets/images/Brands/749-7498990_restaurant-logo-png.png" alt=""></div>
+                    <div><img src="./assets/images/Brands/amazon-logo-transparent.png" alt=""></div>
+                    <div><img src="./assets/images/Brands/nike-swoosh-transparent-background-13.png.crdownload" alt=""></div>
+                    <div><img src="./assets/images/Brands/restaurant-png-hd-fast-food-restaurant-logos-1024.png" alt=""></div>
+                    <div><img src="" alt=""></div>
+                    <div><img src="" alt=""></div>
+                  </div>
+            </section>
+            <!-- <div class="text">
+                <p id="text1"> Our Testimonials </p>
+            </div> -->
+            <section  id="sec6 " data-nav="testimonials ">
+                <div class="testimonials  ">
+                    <div class="testm1 test fade-in">
+                      <div class="profile">
+                        <img src="./assets/images/profiles/man-388104_640.jpg" alt="">
+                      </div>
+                      <div class="content">
+                        <h2>mohamed ibrahim</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, obcaecati distinctio. Consequatur amet molestiae eos, ut cupiditate voluptates?</p>
+                        <div class="rate">★</div>
+                      </div>
+
+                    </div>
+                    <div class="testm2 test fade-in ">
+                        <div class="profile">
+                            <img src="./assets/images/profiles/person-874058_960_720.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>mohamed ibrahim</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, obcaecati distinctio. Consequatur amet molestiae eos, ut cupiditate voluptates?</p>
+                          <div class="rate">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="testm3 test  fade-in">
+                        <div class="profile">
+                            <img src="./assets/images/profiles/person.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>mohamed ibrahim</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, obcaecati distinctio. Consequatur amet molestiae eos, ut cupiditate voluptates?</p>
+                          <div class="rate">★★★</div>
+                        </div>
+                    </div>
+                    <div class="testm4 test fade-in ">
+                        <div class="profile">
+                            <img src="./assets/images/profiles/th.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>mohamed ibrahim</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, obcaecati distinctio. Consequatur amet molestiae eos, ut cupiditate voluptates?</p>
+                          <div class="rate">★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="about" id="about">
+            <div class="info fade-in">
+                <h1>about us</h1>
+                <h2>who we are : </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere perferendis exercitationem laboriosam expedita nam labore, ipsam tempora sunt quisquam voluptatem quae saepe sit quas corporis hic cum esse aliquid beatae?</p>
+                <h2>who sponser us </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="brands">
+                    <img src="./assets/images/Brands/1226166.png" alt="" class="img1">
+                    <img src="./assets/images/Brands/522a7e57d16d86e8193df73e674d1f7a.png" alt="" class="img2">
+                    <img src="./assets/images/Brands/749-7498990_restaurant-logo-png.png" alt="" class="img3">
+                    <img src="./assets/images/Brands/amazon-logo-transparent.png" alt="" class="img4">
+                    <img src="./assets/images/Brands/nike-swoosh-transparent-background-13.png.crdownload" alt="" class="img5">
+                    <img src="./assets/images/Brands/restaurant-png-hd-fast-food-restaurant-logos-1024.png" alt="" class="img6">
+                </div>
+            </div>
+            <div class="rate fade-in">
+                <h2>Rate us :</h2>
+                <form id="rateForm" >
+                  <input id="name" type="text" placeholder="Your name" required >
+                  <input id="email" type="email" placeholder="Your email" required >
+                  <textarea id="comment" placeholder="Your Comment" required ></textarea>
+                    <div class="rating-container">
+                        <label for="rating">Rate:</label>
+                        <div class="stars-rating" id="rating"> <!-- Change here -->
+                          <span data-value="1">★</span>
+                          <span data-value="2">★</span>
+                          <span data-value="3">★</span>
+                          <span data-value="4">★</span>
+                          <span data-value="5">★</span>
+                        </div>
+                      </div>
+
+                  <button type="submit">
+                    Send
+                  </button>
+            </div>
+            </div>
+            <div>
+            <p id="copyrights">&copy; all rights referss to <a href="#">mohaned tareq</a></p>
+        </footer>
+     </div>
+     <button class="go-up" type="button" onclick="scrollToTop()">↑</button>
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+@import url(./pc&tablet.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+    padding: px;
+    margin: 0px;
+    font-family: "Nunito", sans-serif ;
+    overflow-x: hidden;
+}
+
+.contener{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "head head head "
+    "main main main "
+    "fot fot fot"
+    ;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+section {
+    min-height: 0vh; /* Each section takes the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start below */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move into place */
+}
+.fade-in {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start below */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move into place */
+}
+.go-up {
+    position: fixed;
+    bottom: 20px; /* Position near the bottom */
+    right: 10%;  /* Position near the right */
+    width: 50px;
+    height: 50px;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White arrow */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 20px;
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.go-up.show {
+    display: flex; /* Show the button */
+    opacity: 1;
+    transform: scale(1); /* Normal size */
+}
+
+.go-up.hide {
+    opacity: 0;
+    transform: scale(0.8); /* Slightly smaller */
+    pointer-events: none; /* Disable clicks when hidden */
+}
